@@ -1,0 +1,14 @@
+package employeespackage;
+syntax = "proto3";
+
+message Employee{
+    int32 ID = 1;
+    string firstname = 2;
+    string lastname = 3;
+    string email = 4;
+    string gender = 5;
+}
+
+message Employees {
+    repeated Employee employees = 1;
+}
